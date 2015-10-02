@@ -66,6 +66,7 @@ public class ClientMoudule implements ClientMouduleListener {
 					sendSecurekey();
 					mClientMouduleListener.onConnectServer(client,
 							isEnabledSecurityMode());
+                    recevieData("path://");
 				} catch (Exception e) {
 					mClientMouduleListener.onFailedServerConnect(e);
 				}
